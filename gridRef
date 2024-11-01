@@ -1,0 +1,6 @@
+src >  pages > M01010000M.tsx
+const gridRef = useRef<any>();
+- TAP에서는 gridRef가 속성안의 함수를 집어?넣어서 사용한다고 함rc >  pages > M01010000M.tsx
+const gridRef = useRef<any>();
+- TAP에서는 gridRef가 속성안의 함수를 집어?넣어서 사용한다고 함 
+
