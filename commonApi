@@ -1,1 +1,8 @@
-src > apis> commonApi
+(setting > user management)
+
+apis > commonApi.ts
+- menuCode 구분하는 로직(탭, 팝업)
+- mode 구분(탭, 팝업)
+- pathUrl 주소
+- isLov Lov 사용여부
+
