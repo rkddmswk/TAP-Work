@@ -1,0 +1,14 @@
+(setting > user management)
+
+utils > gridUtils.tsx 
+- grid 관련된 설정들이 모여있는 곳
+
+1) gridUtils > setGridConfig
+- 동적 컬럼이 있을 경우 컬럼추가하는 로직
+  ex) comboboxSetting?.dynamicColumn
+- 콤보박스 리스트 로직
+  ex) comboboxSetting?.lovList
+- 컬럼 정보 세팅하는 로직
+  하위 요소가 있을경우엔 개별 컬럼 이동 안됨(전체 이동 헤야 한다.)
+- dataList 추가하는 로직
+- 콤보박스 설정에 공통코드 추가하는 로직
