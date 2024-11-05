@@ -12,3 +12,12 @@ utils > gridUtils.tsx
   하위 요소가 있을경우엔 개별 컬럼 이동 안됨(전체 이동 헤야 한다.)
 - dataList 추가하는 로직
 - 콤보박스 설정에 공통코드 추가하는 로직
+
+2) gridUtils > checkValidation
+- Validation 체크하는 로직
+  해당하는 데이터에서 값이 안바뀐 부분만 찾아서 에러메세지 표출
+  requiredClientError 필수값 체크
+  
+
+3) gridUtils > getAllData
+- 전체 데이터 가져오는 로직
