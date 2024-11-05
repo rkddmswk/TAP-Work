@@ -10,7 +10,7 @@ useEffect(() => {
   }
 },[isReady]);
 
-2) 초기설정
+3) 초기설정
 isPid: false (기본값)
 - true로 수정해서 Pid 넘겨주면 url뒤에 pid가 붙음
 - lovList(combobox)를 출력한다.
@@ -18,12 +18,17 @@ const init = async() => {
   const lovOptionList = await apiLovList({ isPid: true });
 }
 
-3) axios
-apiCommon에 method설정, isPid:true 를 같이 넘겨주면 url뒤에 pid가 붙음
+4) grid 이벤트 영역
+- gridReady
+  isReady 하고나서 제일 먼저 실행되는 함수
+
+5) axios 영역
+- apiCommon에 method설정, isPid:true 를 같이 넘겨주면 url뒤에 pid가 붙음
 const searchHandler = asyne() => {
   await Common({method: 'get', isPis: true }).then((res: any))
 }
 
-4) 이벤트 영역
+
+6) 이벤트 영역
 if문에서 해당 값이 바뀐지 안꼈는지 체크하고 바꼈다면 팝업 생성
 안 바꼈을 경우엔 에러메세지 표출
