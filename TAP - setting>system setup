@@ -1,8 +1,7 @@
 1) 변수설정 영역
+- useStroe(): Redux Store에 접근할 수 있게 해주는 훅 **
 
-Redux Store에 접근할 수 있게 해주는 훅
-
-1) 리액트 Hook 영역
+2) 리액트 Hook 영역
 const [isReady, setIsReady] = useState<boolean | null>(null);
 - true일때 init() 초기설정 활성화
 useEffect(() => {
@@ -14,8 +13,9 @@ useEffect(() => {
 2) 초기설정
 isPid: false (기본값)
 - true로 수정해서 Pid 넘겨주면 url뒤에 pid가 붙음
+- lovList(combobox)를 출력한다.
 const init = async() => {
-  const lovOptionList = await apiLovList({isPid: true})
+  const lovOptionList = await apiLovList({ isPid: true });
 }
 
 3) axios
