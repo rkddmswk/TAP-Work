@@ -6,3 +6,14 @@ apis > commonApi.ts
 - pathUrl 주소
 - isLov Lov 사용여부
 
+
+
+
+==================================
+1) apiCommon
+- pathUrl : defauultUrl 
+  pathUrl를 따로 지정하지 않으면 defaultUrl 로 들어온다.
+- addUrl
+  url 경로 -> defaultUrl/addUrl/isPid
+- addUriParam
+  url 경로 끝에서 동적으로 변하는 url이 들어올때
