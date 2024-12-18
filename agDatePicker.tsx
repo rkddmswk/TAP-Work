@@ -65,7 +65,29 @@ const date = (_field : any) => {
     
     
   
-03) components > agGrid > components > renderer > agDatePicker.tsx
+03) agDatePicker설정
+const AgDatePicker = (props: CustomCellEditorProps) => {
+  const {value, onValueChange, stopEditing, colDef} = props;
+
+  const onChangeHandler = (date: any) => {
+    onValueChange (
+      date === null ? null : utils.dayFormat(date, colDef.cellEditorParams.format.toUppercase())
+    );
+    stopEditing();
+  }
+  
+  return (
+    <DatePicker
+      selected = {value ? new Date(value) : null}
+      showIcon
+      open
+      isClearable
+      closeOnScroll
+      onChange = {onChangeHandler}
+      dateFormat = {colDef.cellEditorParams.format}
+    />
+  )
+}
   
 
     
