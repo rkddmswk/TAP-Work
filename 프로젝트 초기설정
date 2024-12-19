@@ -41,8 +41,12 @@ $ git init
 git add .
 git commit -m "Initial commit"
 
+git staus
+
 3)  GitHub 리포지토리 연결
 git remote add origin https://github.com/username/repository-name.git
 
 4) 커밋 푸시
-git push -u origin main
+git push origin main (메인으로 올릴 경우)
+
+
