@@ -52,3 +52,9 @@ git push origin main (메인으로 올릴 경우)
 참고
 https://hjsong96.tistory.com/43
 
+
+깃허브
+
+저장소 url 수정할때 명령어
+:: git remote set-url origin "https://github.com/rkddmswk/project-namdoshop-file.git"
+
